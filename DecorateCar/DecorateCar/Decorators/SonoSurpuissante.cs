@@ -4,15 +4,12 @@ namespace DecorateCar.Decorators
 {
     public class SonoSurpuissante : VoitureDecorator
     {
-        private Voiture wrappee;
-
-        public SonoSurpuissante(Voiture voiture)
+        public SonoSurpuissante(Voiture voiture) : base(voiture)
         {
-            this.wrappee = voiture;
         }
 
         public string Sonorisation { get; set; }
 
-        public override string Description => $"{wrappee.Description} , kit sono {Sonorisation}";
+        public override string Description() => $"{base.Description()} , kit sono {Sonorisation}";
     }
 }

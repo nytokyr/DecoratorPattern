@@ -4,13 +4,12 @@ namespace DecorateCar.Decorators
 {
     public class MotorisationSurpuissante : VoitureDecorator
     {
-        private Voiture wrappee;
-
-        public MotorisationSurpuissante(Voiture voiture)
-        {
-            wrappee = voiture;
-        }
         public string Motorisation { get; set; }
-        public override string Description => $"{wrappee.Description}, powered-by {Motorisation}";
+        public override string Description() => $"{base.Description()}, powered-by {Motorisation}";
+        public MotorisationSurpuissante(Voiture voiture) : base(voiture)
+        {
+
+        }
+
     }
 }

@@ -22,21 +22,21 @@ namespace DecorateCar
                 PropertyTruck = "transporte des charges lourdes"
             };
 
-            Console.WriteLine(decapotable.Description);
+            Console.WriteLine(decapotable.Description());
 
             var decapotableWithSono = new SonoSurpuissante(decapotable)
             {
                 Sonorisation = "Sono Yamaha"
             };
 
-            Console.WriteLine(decapotableWithSono.Description);
+            Console.WriteLine(decapotableWithSono.Description());
 
             var decapotableWithSonoAndMotorisationSurpuissante = new MotorisationSurpuissante(decapotableWithSono)
             {
                 Motorisation = "moteur reprogrammé par One Logic"
             };
 
-            Console.WriteLine(decapotableWithSonoAndMotorisationSurpuissante.Description);
+            Console.WriteLine(decapotableWithSonoAndMotorisationSurpuissante.Description());
 
             Console.ReadKey();
 

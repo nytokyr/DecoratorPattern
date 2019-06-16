@@ -6,6 +6,9 @@ namespace DecorateCar.Models
     {
         public string MyPropertyOfDecapotable { get; set; }
 
-        public override string Description => $"{base.Description}, de MyPropertyOfDecapotable {MyPropertyOfDecapotable}";
+        public override string Description()
+        {
+            return $"Decapotable, de MyPropertyOfDecapotable {MyPropertyOfDecapotable}";
+        }
     }
 }
