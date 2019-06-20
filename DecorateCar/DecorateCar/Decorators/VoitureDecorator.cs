@@ -4,16 +4,13 @@ namespace DecorateCar.Decorators
 {
     public class VoitureDecorator : Voiture
     {
+        private Voiture _wrappee;
         public VoitureDecorator(Voiture voiture)
         {
-            _Wrappee = voiture;
+            _wrappee = voiture;
         }
-        private Voiture _Wrappee { get; set; }
 
-
-        public override string Description()
-        {
-            return _Wrappee.Description();
-        }
+        public override string Description() => _wrappee.Description();
     }
 }
+

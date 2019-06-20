@@ -6,9 +6,7 @@ namespace DecorateCar.Models
     {
         public string PropertyTruck { get; set; }
 
-        public override string Description()
-        {
-            return $"Camion, de PropertyTruck {PropertyTruck}";
-        }
+        public override string Description() => $"Camion, de PropertyTruck {PropertyTruck}";
+
     }
 }

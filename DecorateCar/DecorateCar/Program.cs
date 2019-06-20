@@ -1,4 +1,5 @@
 ﻿using DecorateCar.Decorators;
+using DecorateCar.Interface;
 using DecorateCar.Models;
 using System;
 
@@ -24,19 +25,19 @@ namespace DecorateCar
 
             Console.WriteLine(decapotable.Description());
 
-            var decapotableWithSono = new SonoSurpuissante(decapotable)
+            Voiture decapotableWithSono = new SonoSurpuissante(decapotable)
             {
                 Sonorisation = "Sono Yamaha"
             };
 
             Console.WriteLine(decapotableWithSono.Description());
 
-            var decapotableWithSonoAndMotorisationSurpuissante = new MotorisationSurpuissante(decapotableWithSono)
+            Voiture decapotableWithSonoAndMotorisationSurpuissante = new MotorisationSurpuissante(decapotableWithSono)
             {
                 Motorisation = "moteur reprogrammé par One Logic"
             };
 
-            var camionWithMoteurSurpuissante = new MotorisationSurpuissante(camion)
+            Voiture camionWithMoteurSurpuissante = new MotorisationSurpuissante(camion)
             {
                 Motorisation = "moteur reprogrammé par Z-TEAM"
             };
