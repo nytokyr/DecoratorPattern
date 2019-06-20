@@ -4,9 +4,9 @@ namespace DecorateCar.Models
 {
     public class Camion : Voiture
     {
-        public string PropertyTruck { get; set; }
+        public string ChargementMaximal { get; set; }
 
-        public override string Description() => $"Camion, de PropertyTruck {PropertyTruck}";
+        public override string Description() => "Je suis un Camion";
 
     }
 }

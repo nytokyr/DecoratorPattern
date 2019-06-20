@@ -12,18 +12,16 @@ namespace DecorateCar
             var decapotable = new Decapotable()
             {
                 Annee = 1998,
-                Marque = "Ferrari",
-                MyPropertyOfDecapotable = "cheveux aux vents"
+                Marque = "Ferrari"
             };
 
             var camion = new Camion()
             {
                 Annee = 2010,
-                Marque = "Mercedes",
-                PropertyTruck = "transporte des charges lourdes"
+                Marque = "Mercedes"
             };
 
-            Console.WriteLine(decapotable.Description());
+            Console.WriteLine(decapotable.Description()); 
 
             Voiture decapotableWithSono = new SonoSurpuissante(decapotable)
             {
@@ -34,12 +32,12 @@ namespace DecorateCar
 
             Voiture decapotableWithSonoAndMotorisationSurpuissante = new MotorisationSurpuissante(decapotableWithSono)
             {
-                Motorisation = "moteur reprogrammé par One Logic"
+                Motorisation = "One Logic Team"
             };
 
             Voiture camionWithMoteurSurpuissante = new MotorisationSurpuissante(camion)
             {
-                Motorisation = "moteur reprogrammé par Z-TEAM"
+                Motorisation = "Z-TEAM"
             };
 
             Console.WriteLine(decapotableWithSonoAndMotorisationSurpuissante.Description());
