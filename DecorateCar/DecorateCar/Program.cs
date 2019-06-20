@@ -36,7 +36,13 @@ namespace DecorateCar
                 Motorisation = "moteur reprogrammé par One Logic"
             };
 
+            var camionWithMoteurSurpuissante = new MotorisationSurpuissante(camion)
+            {
+                Motorisation = "moteur reprogrammé par Z-TEAM"
+            };
+
             Console.WriteLine(decapotableWithSonoAndMotorisationSurpuissante.Description());
+            Console.WriteLine(camionWithMoteurSurpuissante.Description());
 
             Console.ReadKey();
 
