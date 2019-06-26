@@ -7,6 +7,6 @@ namespace DecorateCar.Decorators
         public AmbulanceDecorator(Voiture wrappee) : base(wrappee)
         {
         }
-        public override string Description() => $"{base.Wrappee.Description()}, j'ai des kits médicaux";
+        public override string Description() => $"{base.Description()}, j'ai des kits médicaux";
     }
 }
