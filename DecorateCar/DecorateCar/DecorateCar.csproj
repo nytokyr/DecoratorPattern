@@ -43,17 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Decorators\MotorisationSurpuissante.cs" />
-    <Compile Include="Decorators\SonoSurpuissante.cs" />
-    <Compile Include="Decorators\VoitureDecorator.cs" />
-    <Compile Include="Models\Camion.cs" />
-    <Compile Include="Models\Decapotable.cs" />
-    <Compile Include="Models\Voiture.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Decorators\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
