@@ -4,11 +4,11 @@ namespace DecorateCar.Decorators
 {
     abstract class VoitureDecorator : Voiture
     {
-        Voiture _wrappee;
+        protected Voiture Wrappee;
         public VoitureDecorator(Voiture wrappee)
         {
-            _wrappee = wrappee;
+            Wrappee = wrappee;
         }
-        public override string Description() => _wrappee.Description();
+        public override string Description() => Wrappee.Description();
     }
 }

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decorators\AmbulanceDecorator.cs" />
     <Compile Include="Decorators\VoitureDecorator.cs" />
     <Compile Include="Models\Camion.cs" />
     <Compile Include="Models\Fourgon.cs" />
