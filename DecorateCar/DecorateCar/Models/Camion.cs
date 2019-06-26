@@ -8,8 +8,9 @@ namespace DecorateCar.Models
 {
     class Camion : Voiture
     {
-        public Camion(string id) : base(id)
+        public Camion(string id) 
         {
+            Id = id;
         }
 
         protected override string Description() => $"Je suis un camion, numero {Id}";

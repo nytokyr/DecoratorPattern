@@ -9,10 +9,7 @@ namespace DecorateCar.Models
     abstract class Voiture
     {
         protected string Id { get; set; }
-        protected Voiture(string id)
-        {
-            Id = Id;
-        }
-        protected abstract string Description();
+       
+        public abstract string Description();
     }
 }
